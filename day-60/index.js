@@ -46,53 +46,53 @@
 
 //leetcode 34
 
-var searchRange = function (nums, target) {
-  function firstOccurrence(nums, target) {
-    let start = 0;
-    let end = nums.length - 1;
-    let ans = -1;
+// var searchRange = function (nums, target) {
+//   function firstOccurrence(nums, target) {
+//     let start = 0;
+//     let end = nums.length - 1;
+//     let ans = -1;
 
-    while (start <= end) {
-      let mid = Math.floor((start + end) / 2);
+//     while (start <= end) {
+//       let mid = Math.floor((start + end) / 2);
 
-      if (nums[mid] === target) {
-        ans = mid;
-        end = mid - 1;
-      } else if (nums[mid] < target) {
-        start = mid + 1;
-      } else {
-        end = mid - 1;
-      }
-    }
+//       if (nums[mid] === target) {
+//         ans = mid;
+//         end = mid - 1;
+//       } else if (nums[mid] < target) {
+//         start = mid + 1;
+//       } else {
+//         end = mid - 1;
+//       }
+//     }
 
-    return ans;
-  }
+//     return ans;
+//   }
 
-  function lastOccurrence(nums, target) {
-    let start = 0;
-    let end = nums.length - 1;
-    let ans = -1;
+//   function lastOccurrence(nums, target) {
+//     let start = 0;
+//     let end = nums.length - 1;
+//     let ans = -1;
 
-    while (start <= end) {
-      let mid = Math.floor((start + end) / 2);
+//     while (start <= end) {
+//       let mid = Math.floor((start + end) / 2);
 
-      if (nums[mid] === target) {
-        ans = mid;
-        start = mid + 1;
-      } else if (nums[mid] < target) {
-        start = mid + 1;
-      } else {
-        end = mid - 1;
-      }
-    }
+//       if (nums[mid] === target) {
+//         ans = mid;
+//         start = mid + 1;
+//       } else if (nums[mid] < target) {
+//         start = mid + 1;
+//       } else {
+//         end = mid - 1;
+//       }
+//     }
 
-    return ans;
-  }
+//     return ans;
+//   }
 
-  return [firstOccurrence(nums, target), lastOccurrence(nums, target)];
-};
+//   return [firstOccurrence(nums, target), lastOccurrence(nums, target)];
+// };
 
-console.log(searchRange([2, 7, 7, 8, 8, 9], 8));
+// console.log(searchRange([2, 7, 7, 8, 8, 9], 8));
 //=================================
 
 function searchInsert(nums, target) {

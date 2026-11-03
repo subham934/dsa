@@ -188,6 +188,5 @@ if(x){
     console.log('Truthy');
     
 }else{
-    console.log("falsy");
-    
+    console.log("falsy");   
 }
