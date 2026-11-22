@@ -144,14 +144,237 @@
 
 // ====================================
 
-const prompt = require("prompt-sync")();
+// const prompt = require("prompt-sync")();
 
-let year = +prompt("Enter a year: ");
+// let year = +prompt("Enter a year: ");
 
-if (year % 4 == 0 && year % 100 !== 0) {
-  console.log("It's a Leap Year");
-} else if (year % 400 == 0) {
-  console.log("It's a Leap Year");
-} else {
-  console.log("It's not a leap Year");
-}
+// if (year % 4 == 0 && year % 100 !== 0) {
+//   console.log("It's a Leap Year");
+// } else if (year % 400 == 0) {
+//   console.log("It's a Leap Year");
+// } else {
+//   console.log("It's not a leap Year");
+// }
+
+// ====================================
+
+// let isPrime = function (n) {
+//   if (n <= 1) return false;
+//   if (n == 2) return true;
+//   if (n % 2 == 0) return false;
+//   for (let i = 3; i * i <= n; i += 2) {
+//     if (n % i == 0) return false;
+//   }
+//   return true;
+// };
+// var countPrimes = function (n) {
+//   let count = 0;
+//   for (let i = 2; i < n; i++) {
+//     if (isPrime(i)) {
+//       count++;
+//     }
+//   }
+
+//   return count;
+// };
+
+// console.log(countPrimes(10));
+
+// ====================================
+
+// let prompt = require("prompt-sync")();
+// let day = +prompt("Enter a day: ");
+
+
+// switch (day) {
+//   case 1:
+//     console.log("Monday");
+//     break;
+//   case 2:
+//     console.log("Tuesday");
+//     break;
+//   case 3:
+//     console.log("Wednesday");
+//     break;
+//   case 4:
+//     console.log("Thursday");
+//     break;
+//   case 5:
+//     console.log("Friday");
+//     break;
+//   case 6:
+//     console.log("Saturday");
+//     break;
+//   case 7:
+//     console.log("Sunday");
+//     break;
+//   default:
+//     console.log("Invalid day");
+// }
+
+// ====================================
+
+// let prompt = require("prompt-sync")();
+// let marks = Number(prompt("Enter your marks: "));
+
+
+// switch(true){
+//   case marks >=90 && marks <=100:
+//     console.log("Grade A");
+//     break;
+//   case marks >= 80 && marks < 90:
+//     console.log("Grade B");
+//     break;
+//   case marks >= 70 && marks < 80:
+//     console.log("Grade C");
+//     break;
+//   case marks >= 60 && marks < 70:
+//     console.log("Grade D");
+//     break;
+//   case marks >= 0 && marks < 60:
+//     console.log("Grade F");
+//     break;
+//   default:
+//     console.log("Invalid marks");
+// }
+
+
+// ====================================
+
+// let prompt = require("prompt-sync")();
+
+// let consonents = 0;
+// let vowels = 0;
+
+// let s = prompt("Enter a string: ");
+
+// for(let i = 0; i< s.length; i++){
+//   let ch = s[i].toLowerCase();
+//   switch(ch){
+//     case 'a':
+//     case 'e':
+//     case 'i':
+//     case 'o':
+//     case 'u':
+//       vowels++;
+//       break;
+//     default:
+//         consonents++;
+//   }
+// }
+// console.log("Vowels: " + vowels);
+// console.log("Consonants: " + consonents);
+
+
+
+// ====================================
+
+// let prompt = require("prompt-sync")();
+
+
+// console.log("Enter 1 for area of rectangle");
+// console.log("Enter 2 for area of circle");
+// console.log("Enter 3 for area of triangle");
+
+// let n = +prompt("Enter a number: ");
+
+// switch(n){
+//   case 1:
+//     let len = Number(prompt("Enter the length: "));
+//     let breadth = Number(prompt("Enter the breadth: "));
+//     console.log("Area: " + (len * breadth));
+//     break;
+  
+//   case 2:
+//     let radius = Number(prompt("Enter the radius: "));
+//     console.log("Area: " + (Math.PI * radius * radius).toFixed(2));
+//     break;
+//   case 3:
+//     let base = Number(prompt("Enter the base: "));
+//     let height = Number(prompt("Enter the height: "));
+//     console.log("Area: " + (0.5 * base * height).toFixed(2));
+//     break;
+//   default:
+//     console.log("Invalid choice");
+// }
+
+
+
+// day - 7 & 8, look at the lacture videos for more examples
+
+// ====================================
+
+// let prompt = require("prompt-sync")();
+
+// let n = +prompt("Enter a Number: ")
+
+// for(let i = 1; i <= n; i++){
+//   console.log(i);
+// }
+
+
+// ====================================
+
+// let prompt = require("prompt-sync")();
+
+// let n = +prompt("Enter a Number: ")
+
+// for(let i = n; i >= 1; i--){
+//   console.log(i);
+// }
+
+
+
+// ====================================
+
+// take a number as input and print its table
+// let prompt = require("prompt-sync")();
+
+// let n = +prompt("Enter a Number: ");
+
+// for(let i = 1; i <= 10; i++){
+//   console.log(`${n} x ${i} = ${n * i}`);
+// }
+
+// ====================================
+
+
+// sum upto n terms
+
+// let prompt = require('prompt-sync')();
+// let n = +prompt("Enter a Number: ")
+// let sum = 0;
+// for(let i = 0; i<=n; i++){
+//   sum += i;
+// }
+// console.log("Sum: " + sum);
+
+
+// ====================================
+
+
+// Print all the factors of number
+
+// let prompt = require("prompt-sync")();
+// let n = +prompt("Enter a Number: ")
+
+// for(let i = 1; i<=n; i++){
+//     if(n % i === 0){
+//         console.log(i);
+//     }
+// }
+
+
+
+
+// ====================================
+// ====================================
+// ====================================
+// ====================================
+// ====================================
+// ====================================
+// ====================================
+// ====================================
+// ====================================
+// ====================================
+// ====================================
