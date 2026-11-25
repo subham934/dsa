@@ -185,7 +185,6 @@
 // let prompt = require("prompt-sync")();
 // let day = +prompt("Enter a day: ");
 
-
 // switch (day) {
 //   case 1:
 //     console.log("Monday");
@@ -217,7 +216,6 @@
 // let prompt = require("prompt-sync")();
 // let marks = Number(prompt("Enter your marks: "));
 
-
 // switch(true){
 //   case marks >=90 && marks <=100:
 //     console.log("Grade A");
@@ -237,7 +235,6 @@
 //   default:
 //     console.log("Invalid marks");
 // }
-
 
 // ====================================
 
@@ -265,12 +262,9 @@
 // console.log("Vowels: " + vowels);
 // console.log("Consonants: " + consonents);
 
-
-
 // ====================================
 
 // let prompt = require("prompt-sync")();
-
 
 // console.log("Enter 1 for area of rectangle");
 // console.log("Enter 2 for area of circle");
@@ -284,7 +278,7 @@
 //     let breadth = Number(prompt("Enter the breadth: "));
 //     console.log("Area: " + (len * breadth));
 //     break;
-  
+
 //   case 2:
 //     let radius = Number(prompt("Enter the radius: "));
 //     console.log("Area: " + (Math.PI * radius * radius).toFixed(2));
@@ -298,8 +292,6 @@
 //     console.log("Invalid choice");
 // }
 
-
-
 // day - 7 & 8, look at the lacture videos for more examples
 
 // ====================================
@@ -312,7 +304,6 @@
 //   console.log(i);
 // }
 
-
 // ====================================
 
 // let prompt = require("prompt-sync")();
@@ -322,8 +313,6 @@
 // for(let i = n; i >= 1; i--){
 //   console.log(i);
 // }
-
-
 
 // ====================================
 
@@ -338,7 +327,6 @@
 
 // ====================================
 
-
 // sum upto n terms
 
 // let prompt = require('prompt-sync')();
@@ -349,9 +337,7 @@
 // }
 // console.log("Sum: " + sum);
 
-
 // ====================================
-
 
 // Print all the factors of number
 
@@ -364,11 +350,31 @@
 //     }
 // }
 
+// ====================================
 
+// check if a number is prime
 
+let prompt = require("prompt-sync")();
+let n = Number(prompt("Enter a Number: "));
+
+function checkPrime(n) {
+  if (n <= 1) {
+    return false;
+  }
+  let total = [];
+
+  for (let i = 2; i < n; i++) {
+    if (n % i === 0) {
+      total.push(i);
+    }
+  }
+  return total.length === 0;
+}
+
+console.log(checkPrime(n));
 
 // ====================================
-// ====================================
+
 // ====================================
 // ====================================
 // ====================================
