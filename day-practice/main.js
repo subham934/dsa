@@ -368,12 +368,21 @@ function checkPrime(n) {
       total.push(i);
     }
   }
-  return total.length === 0;
+  if(total.length === 0){
+    console.log("It's a Prime Number");
+  } else {
+    console.log("It's not a Prime Number")
+  }
 }
 
-console.log(checkPrime(n));
+checkPrime(n)
 
 // ====================================
+
+
+
+
+
 
 // ====================================
 // ====================================
