@@ -354,31 +354,36 @@
 
 // check if a number is prime
 
-let prompt = require("prompt-sync")();
-let n = Number(prompt("Enter a Number: "));
+// let prompt = require("prompt-sync")();
+// let n = Number(prompt("Enter a Number: "));
 
-function checkPrime(n) {
-  if (n <= 1) {
-    return false;
-  }
-  let total = [];
+// function checkPrime(n) {
+//   if (n <= 1) {
+//     return false;
+//   }
+//   let total = [];
 
-  for (let i = 2; i < n; i++) {
-    if (n % i === 0) {
-      total.push(i);
-    }
-  }
-  if(total.length === 0){
-    console.log("It's a Prime Number");
-  } else {
-    console.log("It's not a Prime Number")
-  }
-}
+//   for (let i = 2; i < n; i++) {
+//     if (n % i === 0) {
+//       total.push(i);
+//     }
+//   }
+//   if(total.length === 0){
+//     console.log("It's a Prime Number");
+//   } else {
+//     console.log("It's not a Prime Number")
+//   }
+// }
 
-checkPrime(n)
+// checkPrime(n)
 
 // ====================================
 
+// let x = 6;
+// while(x){
+//   console.log(x);
+//   x--;
+// }
 
 
 
